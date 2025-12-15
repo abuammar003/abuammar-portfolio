@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skil_main {
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.781);
+}
+
+.skil_heading {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.skil_heading .head-main {
+    font-size: clamp(28px, 4vw, 45px);
+    /* color: rgba(0, 0, 255, 0.699); */
+    color: rgba(53, 137, 231, 1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.skil_heading p {
+    font-size: clamp(16px, 2vw, 22px);
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.3;
+}
+
+.skil_contnr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.skil_box {
+    max-width: 320px;
+    flex: 1 1 280px;
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.skil_box:hover {
+    transform: scale(1.05);
+}
+
+.skil_box h3 {
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+.skil_box .sklbox_head {
+    font-size: clamp(22px, 3vw, 35px);
+    background: linear-gradient(#FF9A00, #faa433e3);
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.skil_box h4 {
+    font-size: clamp(18px, 2.5vw, 25px);
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1.5rem;
+    color: rgba(0, 0, 255, 0.699);
+}
+
+.skil_box ul {
+    list-style-type: none;
+}
+.skil_box ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.skil_box ul li span {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.blue_icon {
+    color: blue;
+}
+.black_icon {
+    color: black;
+}
+.gren_icon {
+    color: green;
+}
+.red_icon {
+    color: rgba(255, 0, 0, 0.767);
+}
+
+
+.skilrng_main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1.5rem 3rem;
+}
+.skil_main h1 {
+    font-size: clamp(28px, 4vw, 35px);
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin: 2.5rem 0rem 1rem 0rem;
+}
+
+.skil_range {
+    flex: 1 1 420px;
+    max-width: 550px;
+    width: 100%;
+}
+.skil_range h2 {
+    font-size: clamp(20px, 2vw, 23px);
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    margin: 1rem 0rem 0.3rem 0rem;
+    color: rgba(0, 0, 0, 0.925);
+    display: flex;
+    justify-content: space-between;
+    /* font-size: ; */
+}
+.skil_range .range_white {
+    width: 100%;
+    height: 12px;
+    background-color: rgba(169, 169, 169, 0.61);
+    border-radius: 20px;
+    /* outline: auto; */
+}
+.skil_range .range_blueHTML,
+.range_blueDB,
+.range_blueJS,
+.range_blueRJs,
+.range_blueNJs,
+.range_blueEJs {
+    height: 12px;
+    border-radius: 20px;
+    background: #3589E7;
+    background: linear-gradient(153deg, rgba(53, 137, 231, 1) 5%, rgba(20, 181, 139, 1) 83%);
+}
+
+.range_blueHTML { width: 95%; }
+.range_blueJS { width: 90%; }
+.range_blueRJs { width: 85%; }
+.range_blueNJs { width: 80%; }
+.range_blueEJs { width: 83%; }
+.range_blueDB { width: 78%; }
+
+
+
+@media (max-width: 768px) {
+    .skil_contnr {
+        gap: 1.5rem;
+    }
+    .skilrng_main {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.2rem;
+    }
+    .skil_range {
+        max-width: 90%;
+        margin: 0rem;
+        flex: 0 0 20px;
+
+    }
+   
+}
+
+
+@media (max-width: 480px) {
+    .skil_heading p {
+        font-size: 15px;
+    }
+    .skil_box {
+        padding: 1rem;
+    }
+    .skil_range {
+        max-width: 100%;
+    }
+}
