@@ -18,18 +18,18 @@ const Footer = () => {
             <a href='https://www.linkedin.com/in/ammar-shah-252448284/'><FaLinkedinIn className='icon'/></a>
             <a href='https://x.com/Ammarshah1252'><FaTwitter className='icon'/></a>
         </div>
-        <p>Tech Stack I'm Proficient in:</p>
+        <p>Tech Stacks I'm Proficient in:</p>
         <div className="ftr_stack">
             <span>HTML5</span>
             <span>CSS3</span>
             <span>JavaScript</span>
             <span>React.js</span>
-            <span>Node.js</span>
-            <span>Express.js</span>
+            {/* <span>Node.js</span>
+            <span>Express.js</span> */}
         </div>
 
         <div className="ftr_contact">
-          <p>Email: <a href="mailto:ammarshah1252@gmail.com">ammarshah1252@gmail.com</a></p>
+          <p>E-mail: <a href="mailto:ammarshah1252@gmail.com">ammarshah1252@gmail.com</a></p>
         </div>
 
         <div className="ftr_bottom">

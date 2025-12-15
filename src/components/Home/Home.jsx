@@ -16,10 +16,10 @@ const Home = () => {
                 <h4> <a href='#contact'>Get in Touch</a></h4>
             </div>
             <div className="hmtext_icons">
-                <p><FaGithub /></p>
-                <p><FaLinkedinIn /></p>
-                <p><FaTwitter /></p>
-                <p><FaInstagram /></p>
+                <p><a href='https://github.com/abuammar003'><FaGithub /></a></p>
+                <p><a href='https://www.linkedin.com/in/ammar-shah-252448284/'><FaLinkedinIn /></a></p>
+                <p><a href='https://x.com/Ammarshah1252'><FaTwitter /></a></p>
+                <p><a href='https://www.instagram.com/abu_ammar_003/'><FaInstagram /></a></p>
             </div>
         </div>
         <div className='home_img'>

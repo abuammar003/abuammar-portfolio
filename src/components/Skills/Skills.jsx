@@ -26,7 +26,7 @@ const Skills = () => {
                     <li><span className='blue_icon'><FaCss3Alt /></span>CSS3</li>
                     <li><span><RiJavascriptFill /></span>JavaScript</li>
                     <li><span className='blue_icon'><FaReact /></span>React.js</li>
-                    <li><span className='blue_icon'><SiTailwindcss /></span>Tailwind CSS</li>
+                    <li><span className='blue_icon'><SiTailwindcss /></span>Tailwind CSS </li>
                     <li><span className='blue_icon'><FaBootstrap /></span>BootStrap</li>
                 </ul>
             </div>
@@ -72,7 +72,7 @@ const Skills = () => {
                 </div>
             </div>
              <div className="skil_range">
-                <h2>JavaScript <span>90%</span></h2>
+                <h2>JavaScript <span>80%</span></h2>
                 <div className="range_white">
                     <div className="range_blueJS"></div>
                 </div>
@@ -84,13 +84,13 @@ const Skills = () => {
                 </div>
             </div>
              <div className="skil_range">
-                <h2>Node.js <span>80%</span></h2>
+                <h2>Node.js <span>75%</span></h2>
                 <div className="range_white">
                     <div className="range_blueNJs"></div>
                 </div>
             </div>
              <div className="skil_range">
-                <h2>Express.js <span>83%</span></h2>
+                <h2>Express.js <span>80%</span></h2>
                 <div className="range_white">
                     <div className="range_blueEJs"></div>
                 </div>

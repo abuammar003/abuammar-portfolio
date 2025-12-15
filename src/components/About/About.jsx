@@ -1,8 +1,39 @@
 import React from 'react';
 import "./About.css";
-import { FaBuildingColumns, FaHandHoldingHeart, FaCode } from "react-icons/fa6";
+import { FaBuildingColumns, FaHandHoldingHeart, FaCode, FaPaintbrush, FaRocket, FaMobileScreen } from "react-icons/fa6";
 
 const About = () => {
+    const aboutBoxes = [
+        {
+            id:1,
+            title: "Clean Code Advocate",
+            titleII: "Writing well-structured and maintainable codebases",
+            description: "Experienced in creating scalable applications with proper code organization, documentation, and best practices.",
+            icon: FaCode,
+        },
+         {
+            id:2,
+            title: "UI/UX Focus",
+            titleII: "User-centered design principles",
+            description: "Designing intuitive interfaces with modern CSS frameworks and responsive design techniques for optimal user experience.",
+            icon: FaPaintbrush,
+        },
+         {
+            id:3,
+            title: "Performance Optimized",
+            titleII: "Fast-loading and efficient applications",
+            description: "Implementing performance best practices, code splitting, lazy loading, and optimized database queries for seamless user experience.",
+            icon: FaRocket,
+        },
+         {
+            id:4,
+            title: "Mobile First",
+            titleII: "Responsive design for all devices",
+            description: "Creating mobile-responsive applications that provide excellent user experience across all device sizes and screen resolutions.",
+            icon: FaMobileScreen,
+        },
+    ]
+
 
   return (
 
@@ -33,7 +64,18 @@ const About = () => {
     
         <div className="about_right">
 
-            <div className="abt_Box">
+            {aboutBoxes.map(item => (
+                 <div className="abt_Box" key={item.id}>
+                <span className='icon'> {item.icon} </span>
+                <div>
+                    <h2>{item.title}</h2>
+                    <p>{item.titleII}</p>
+                    <p>{item.description}</p>
+                </div>
+            </div>
+            ))}
+
+            {/* <div className="abt_Box">
                 <span className='icon'> <FaCode className='code_icon'/> </span>
                 <div>
                     <h2>Clean Code Advocate</h2>
@@ -64,7 +106,7 @@ const About = () => {
                     <p>Writing well-structured and maintainable codebases</p>
                     <p>Experienced in creating scalable applications with proper code organization, documentation, and best practices.</p>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     </div>

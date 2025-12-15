@@ -38,7 +38,7 @@
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin: 1rem 0rem;
+    margin: 0rem 0rem;
 }
 .ftr_icons a .icon {
     text-decoration: none;
@@ -73,7 +73,7 @@
     padding: 5px 15px;
     border-radius: 50px;
       background: #3589E7;
-    background: linear-gradient(163deg, rgba(53, 137, 231, 1) 65%, rgba(20, 181, 139, 1) 30%);
+    background: linear-gradient(168deg, rgba(53, 137, 231, 1) 68%, rgba(20, 181, 139, 1) 28%);
     
 }
 

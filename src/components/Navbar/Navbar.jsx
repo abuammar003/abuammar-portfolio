@@ -19,11 +19,6 @@ const Navbar = () => {
 
         <div className={`nav_links ${showNav ? "show" : ""}`} onClick={() => {setShowNav(false)}}> 
             <ul>
-                {/* <li><Link to="/"> Home </Link></li>
-                <li><Link to="/skill"> Skills </Link></li>
-                <li><Link to="/projects"> Projects </Link></li>
-                <li><Link to="/about"> About </Link></li>
-                <li><Link to="/contact"> Contact </Link></li> */}
                 <li><a href="#home"> Home </a></li>
                 <li><a href="#skill"> Skills </a></li>
                 <li><a href="#projects"> Projects </a></li>

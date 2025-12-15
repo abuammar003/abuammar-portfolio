@@ -78,11 +78,13 @@
     align-items: center;
     gap: 1.5rem;
 }
-.hmtext_icons p {
+.hmtext_icons p a {
     background-color: rgba(255, 255, 255, 0.897);
+    color: black;
     border: 500px;
     padding: 8px 8px 1px 8px;
     border-radius: 500px;
+    text-decoration: none;
     cursor: pointer;    
     font-size: 25px;
     align-items: center;
