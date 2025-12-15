@@ -12,8 +12,8 @@ const Projects = () => {
             id: 1,
             image: eCommerce,
             title: "E-Commerce Platform",
-            description : "Full-stack e-commerce solution implementing user authentication, product management, and payment integration using modern web technologies",
-            tech: ["Ract.js", 'TailwindCSS', 'REST API'],
+            description : "React-based e-commerce application with a responsive Tailwind CSS UI and dynamic product rendering via REST API integration. Focused on performance, scalability, and clean component architecture.",
+            tech: ["Ract.js", 'TailwindCSS', 'REST API', 'Responsive Design'],
             gitHub: "#",
             live: "#"
         },
@@ -21,8 +21,8 @@ const Projects = () => {
             id: 2,
             image: ticTacToe,
             title: "Tic-Tac-Toe Game",
-            description : "Full-stack e-commerce solution implementing user authentication, product management, and payment integration using modern web technologies",
-            tech: ["Ract.js", 'Reasponsive CSS'],
+            description : "A React-based Tic Tac Toe game featuring User vs User and User vs Computer modes, real-time score tracking, and a clean responsive UI built with custom CSS.",
+            tech: ["Ract.js", 'Reasponsive CSS', 'Game Logic'],
             gitHub: "https://github.com/abuammar003/reactTicTacToeApp",
             live: "https://tic-tac-toe-app-zeta-six.vercel.app/"
         },
