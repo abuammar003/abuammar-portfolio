@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Skills.css";
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 import { FaCode, FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaNodeJs, FaGlobe, FaGithub } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { RiJavascriptFill } from "react-icons/ri";
@@ -8,6 +10,7 @@ import { AiFillDatabase } from "react-icons/ai";
 import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
+    const {ref, inView} = useInView({triggerOnce : true, threshold : 0.1});
 
   return (
     <div className='skil_main' id='skill'>
@@ -64,39 +67,51 @@ const Skills = () => {
         </div>
 
             <h1>Skill Proficiency</h1>
-        <div className="skilrng_main">
+        <div className="skilrng_main" ref={ref}>
             <div className="skil_range">
-                <h2>HTML/CSS <span>95%</span></h2>
+                <h2>HTML/CSS <span>{inView && <CountUp end={95} duration={2} separator=','/>} %
+                 {/* 95%  */}
+                </span></h2>
                 <div className="range_white">
                     <div className="range_blueHTML"></div>
                 </div>
             </div>
              <div className="skil_range">
-                <h2>JavaScript <span>80%</span></h2>
+                <h2>JavaScript 
+                    <span>{inView && <CountUp end={80} duration={2} separator=','/>}%</span>
+                    </h2>
                 <div className="range_white">
                     <div className="range_blueJS"></div>
                 </div>
             </div>
              <div className="skil_range">
-                <h2>React.js <span>85%</span></h2>
+                <h2>React.js 
+                    <span>{inView && <CountUp end={85} duration={2} separator=','/>}%</span>
+                    </h2>
                 <div className="range_white">
                     <div className="range_blueRJs"></div>
                 </div>
             </div>
              <div className="skil_range">
-                <h2>Node.js <span>75%</span></h2>
+                <h2>Node.js 
+                    <span>{inView && <CountUp end={75} duration={2} separator=','/>}%</span>
+                </h2>
                 <div className="range_white">
                     <div className="range_blueNJs"></div>
                 </div>
             </div>
              <div className="skil_range">
-                <h2>Express.js <span>80%</span></h2>
+                <h2>Express.js 
+                    <span>{inView && <CountUp end={80} duration={2} separator=','/>}%</span>
+                </h2>
                 <div className="range_white">
                     <div className="range_blueEJs"></div>
                 </div>
             </div>
              <div className="skil_range">
-                <h2>DataBase <span>78%</span></h2>
+                <h2>DataBase 
+                    <span>{inView && <CountUp end={78} duration={2} separator=','/>}%</span>
+                </h2>
                 <div className="range_white">
                     <div className="range_blueDB"></div>
                 </div>
