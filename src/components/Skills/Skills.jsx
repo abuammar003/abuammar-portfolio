@@ -10,7 +10,7 @@ import { AiFillDatabase } from "react-icons/ai";
 import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
-    const {ref, inView} = useInView({triggerOnce : true, threshold : 0.1});
+    const {ref, inView} = useInView({triggerOnce : true, threshold : 0.5});
 
   return (
     <div className='skil_main' id='skill'>
@@ -69,7 +69,7 @@ const Skills = () => {
             <h1>Skill Proficiency</h1>
         <div className="skilrng_main" ref={ref}>
             <div className="skil_range">
-                <h2>HTML/CSS <span>{inView && <CountUp end={95} duration={2} separator=','/>} %
+                <h2>HTML/CSS <span>{inView && <CountUp end={90} duration={2} />} %
                  {/* 95%  */}
                 </span></h2>
                 <div className="range_white">
@@ -78,7 +78,7 @@ const Skills = () => {
             </div>
              <div className="skil_range">
                 <h2>JavaScript 
-                    <span>{inView && <CountUp end={80} duration={2} separator=','/>}%</span>
+                    <span>{inView && <CountUp end={80} duration={2} />}%</span>
                     </h2>
                 <div className="range_white">
                     <div className="range_blueJS"></div>
@@ -86,7 +86,7 @@ const Skills = () => {
             </div>
              <div className="skil_range">
                 <h2>React.js 
-                    <span>{inView && <CountUp end={85} duration={2} separator=','/>}%</span>
+                    <span>{inView && <CountUp end={85} duration={2} />}%</span>
                     </h2>
                 <div className="range_white">
                     <div className="range_blueRJs"></div>
@@ -94,7 +94,7 @@ const Skills = () => {
             </div>
              <div className="skil_range">
                 <h2>Node.js 
-                    <span>{inView && <CountUp end={75} duration={2} separator=','/>}%</span>
+                    <span>{inView && <CountUp end={75} duration={2} />}%</span>
                 </h2>
                 <div className="range_white">
                     <div className="range_blueNJs"></div>
@@ -102,7 +102,7 @@ const Skills = () => {
             </div>
              <div className="skil_range">
                 <h2>Express.js 
-                    <span>{inView && <CountUp end={80} duration={2} separator=','/>}%</span>
+                    <span>{inView && <CountUp end={80} duration={2} />}%</span>
                 </h2>
                 <div className="range_white">
                     <div className="range_blueEJs"></div>
@@ -110,7 +110,7 @@ const Skills = () => {
             </div>
              <div className="skil_range">
                 <h2>DataBase 
-                    <span>{inView && <CountUp end={78} duration={2} separator=','/>}%</span>
+                    <span>{inView && <CountUp end={78} duration={2} />}%</span>
                 </h2>
                 <div className="range_white">
                     <div className="range_blueDB"></div>

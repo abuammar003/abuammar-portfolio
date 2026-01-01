@@ -144,7 +144,7 @@
     /* font-size: ; */
 }
 .skil_range h2 span {
-    font-size: clamp(19px, 2vw, 23px);
+    font-size: clamp(21px, 3vw, 26px);
 }
 .skil_range .range_white {
     width: 100%;
@@ -165,7 +165,7 @@
     background: linear-gradient(153deg, rgba(53, 137, 231, 1) 5%, rgba(20, 181, 139, 1) 83%);
 }
 
-.range_blueHTML { width: 93%; }
+.range_blueHTML { width: 90%; }
 .range_blueJS { width: 80%; }
 .range_blueRJs { width: 85%; }
 .range_blueNJs { width: 80%; }
