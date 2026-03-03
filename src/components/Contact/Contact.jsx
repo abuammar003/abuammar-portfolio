@@ -12,9 +12,8 @@ const Contact = () => {
     function handleClick() {
 
         if(!name || !email || !message) {
-            alert("All fields are Requires!");
-        }
-
+            return alert("All fields are Requires!");
+        } 
             alert("Thanks for Contact");
             setName("");
             setEmail("");
@@ -105,7 +104,7 @@ const Contact = () => {
                         <a href='https://x.com/Ammarshah1252'>
                         <button> <FaTwitter className='icon' /> Twitter</button>
                         </a>
-                        <a href='https://www.instagram.com/abu_ammar_003/'>
+                        <a href='https://www.instagram.com/ammarshah_03/'>
                         <button> <FaInstagram className='icon' /> Instagram</button>
                         </a>
                     </div>
