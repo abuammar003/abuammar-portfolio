@@ -7,7 +7,7 @@ import { FaCode } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="home_main" id='home'>
-
+ 
         <div className='home_text'>
             <h1>Hello, I'm <br /> <span className="grad-text"> Abu Ammar </span> </h1>
             <h3>Computer Science Graduate crafting digital solutions with modern technologies, eager to start my professional journey in web development</h3>
@@ -23,8 +23,8 @@ const Home = () => {
             </div>
         </div>
         <div className='home_img'>
-            <img src={portfolioImage} alt='Ammar_Image'/>
             <FaCode className='hmimg_icon'/>
+            <img src={portfolioImage} alt='Ammar_Image'/>
         </div>
     </div>
 

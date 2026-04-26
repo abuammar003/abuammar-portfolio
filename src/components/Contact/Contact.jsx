@@ -10,7 +10,7 @@ const Contact = () => {
     const [message, setMessage] = useState("");
 
     function handleClick() {
-
+ 
         if(!name || !email || !message) {
             alert("All fields are Requires!");
         }

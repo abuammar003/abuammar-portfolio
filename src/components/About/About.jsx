@@ -1,6 +1,7 @@
 import React from 'react';
 import "./About.css";
-import { FaBuildingColumns, FaHandHoldingHeart, FaCode, FaPaintbrush, FaRocket, FaMobileScreen } from "react-icons/fa6";
+import { FaBuildingColumns, FaCode, FaPaintbrush, FaRocket, FaMobileScreen } from "react-icons/fa6";
+import { FaLaptopCode } from "react-icons/fa";
 
 const About = () => {
     const aboutBoxes = [
@@ -50,12 +51,12 @@ const About = () => {
                     <div>
                         <FaBuildingColumns className='eduBox_icon'/>
                         <h4>Bsc Computer Science</h4>
-                        <p>Current Student</p>
+                        <p>Completed</p>
                     </div>
                     <div>
-                        <FaHandHoldingHeart  className='eduBox_icon'/>
-                        <h4>Bsc Computer Science</h4>
-                        <p>Current Student</p>
+                        <FaLaptopCode  className='eduBox_icon'/>
+                        <h4>Web Developer</h4>
+                        <p>Fresher</p>
                     </div>
                 </div>
             </div>
@@ -75,38 +76,6 @@ const About = () => {
             </div>
             ))}
 
-            {/* <div className="abt_Box">
-                <span className='icon'> <FaCode className='code_icon'/> </span>
-                <div>
-                    <h2>Clean Code Advocate</h2>
-                    <p>Writing well-structured and maintainable codebases</p>
-                    <p>Experienced in creating scalable applications with proper code organization, documentation, and best practices.</p>
-                </div>
-            </div>
-             <div className="abt_Box">
-                <span className='icon'> <FaCode className='code_icon'/> </span>
-                <div>
-                    <h2>Clean Code Advocate</h2>
-                    <p>Writing well-structured and maintainable codebases</p>
-                    <p>Experienced in creating scalable applications with proper code organization, documentation, and best practices.</p>
-                </div>
-            </div>
-             <div className="abt_Box">
-                <span className='icon'> <FaCode className='code_icon'/> </span>
-                <div>
-                    <h2>Clean Code Advocate</h2>
-                    <p>Writing well-structured and maintainable codebases</p>
-                    <p>Experienced in creating scalable applications with proper code organization, documentation, and best practices.</p>
-                </div>
-            </div>
-             <div className="abt_Box">
-                <span className='icon'> <FaCode className='code_icon'/> </span>
-                <div>
-                    <h2>Clean Code Advocate</h2>
-                    <p>Writing well-structured and maintainable codebases</p>
-                    <p>Experienced in creating scalable applications with proper code organization, documentation, and best practices.</p>
-                </div>
-            </div> */}
 
         </div>
     </div>
