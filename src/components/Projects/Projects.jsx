@@ -4,16 +4,17 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { MdDescription } from 'react-icons/md';
 import eCommerce from "../../assets/e-commerce.png";
 import ticTacToe from "../../assets/TicTacToe.png";
+import movieradar from "../../assets/MovieRadar.png";
 
 
 const Projects = () => {
     const projects = [
         {
             id: 1,
-            image: eCommerce,
+            image: eCommerce, 
             title: "E-Commerce Platform",
             description : "React-based e-commerce application with a responsive Tailwind CSS UI and dynamic product rendering via REST API integration. Focused on performance, scalability, and clean component architecture.",
-            tech: ["Ract.js", 'TailwindCSS', 'REST API', 'Responsive Design'],
+            tech: ["React.js", 'TailwindCSS', 'REST API', 'Responsive Design'],
             gitHub: "#",
             live: "#"
         },
@@ -22,16 +23,16 @@ const Projects = () => {
             image: ticTacToe,
             title: "Tic-Tac-Toe Game",
             description : "A React-based Tic Tac Toe game featuring User vs User and User vs Computer modes, real-time score tracking, and a clean responsive UI built with custom CSS.",
-            tech: ["Ract.js", 'Reasponsive CSS', 'Game Logic'],
+            tech: ["React.js", 'Reasponsive CSS', 'Game Logic'],
             gitHub: "https://github.com/abuammar003/reactTicTacToeApp",
             live: "https://tic-tac-toe-app-zeta-six.vercel.app/"
         },
          {
             id: 3,
-            image: "https://img.freepik.com/premium-vector/ecommerce-project-banner-landing-page-template-website_541075-1532.jpg",
-            title: "E-Commerce Platform",
-            description : "Full-stack e-commerce solution implementing user authentication, product management, and payment integration using modern web technologies",
-            tech: ["Ract.js", 'TailwindCSS', 'REST API'],
+            image: movieradar,
+            title: "Movies Information Website",
+            description : "A responsive movie information website that allows users to search, explore, and view detailed data about movies including ratings, genres, and release dates using real-time API integration.",
+            tech: ["React.js", 'REST API', "Responsive CSS"],
             gitHub: "#",
             live: "#"
         },

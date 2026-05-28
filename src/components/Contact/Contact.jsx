@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./Contact.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { IoCall, IoLocationSharp  } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -7,23 +9,38 @@ import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
 
     function handleClick() {
-
-        if(!name || !email || !message) {
-            return alert("All fields are Requires!");
+ 
+        if(!name || !email || !subject || !message) {
+            toast.error("All fields are Required!");
+            return
         } 
-            alert("Thanks for Contact");
+            toast.success("Thanks for Contact!");
             setName("");
             setEmail("");
+            setSubject("");
             setMessage("");
+       
     }
 
     function handleChange(e) {
-        setName(e.target.value);
-        setEmail(e.target.value);
-        setMessage(e.target.value)
+        const {name, value} = e.target;
+
+        if(name === "name"){
+            setName(value);
+        } 
+        else if (name === "email") {
+            setEmail(value);
+        } 
+        else if (name === "subject") {
+            setSubject(value)
+        } 
+        else if (name === "message") {
+            setMessage(value)
+        }
     }
 
   return (
@@ -40,19 +57,23 @@ const Contact = () => {
             <h2>Send me a message</h2>
             <div className="input">
                 <h5>Name</h5>
-                <input type='text' placeholder='Your Full Name' onChange={handleChange}/>
+                <input type='text' name='name' value={name} placeholder='Your Full Name' 
+                       onChange={handleChange}/>
             </div>
             <div className="input">
                 <h5>Email</h5>
-                <input type='text' placeholder='Your Email' onChange={handleChange}/>
+                <input type='text' name='email' value={email} placeholder='Your Email' 
+                       onChange={handleChange}/>
             </div>
              <div className="input">
                 <h5>Subject</h5>
-                <input type='text' placeholder='Subject' onChange={handleChange}/>
+                <input type='text' name='subject' value={subject} placeholder='Subject'
+                       onChange={handleChange}/>
             </div>
              <div className="input">
                 <h5>Message</h5>
-                <textarea type='text' placeholder='Enter a Message...'  className='msg' onChange={handleChange}/>
+                <textarea type='text' name='message' value={message} placeholder='Enter a Message...' 
+                          className='msg' onChange={handleChange}/>
             </div>
             <button className='contform_Btn' onClick={handleClick}>Send a Message</button>
         </div>

@@ -11,7 +11,7 @@ import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
     const {ref, inView} = useInView({triggerOnce : true, threshold : 0.5});
-
+ 
   return (
     <div className='skil_main' id='skill'>
 
@@ -47,7 +47,7 @@ const Skills = () => {
                 <h3><span className='sklbox_head'><FaCode /></span></h3>
                 <h4>DataBases</h4>
                 <ul>
-                    <li><span className='blue_icon'><SiMysql /></span>MySQL</li>
+                    {/* <li><span className='blue_icon'><SiMysql /></span>MySQL</li> */}
                     <li><span className='gren_icon'><SiMongodb /></span>MongoDB</li>
                     <li><span className='black_icon'><AiFillDatabase /></span>Database Design</li>
                     <li>ORM</li>

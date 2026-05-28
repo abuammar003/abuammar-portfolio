@@ -8,18 +8,22 @@
     width: 100%;
     padding: 7.5rem 2.5rem 2rem 2.5rem;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
     background: linear-gradient(rgba(56, 56, 122, 0.267), rgba(255, 255, 255, 0.562), rgba(47, 47, 107, 0.274));
 }
 
 .home_text {
-    width: 60%;
+    flex: 1;
+    min-width: 300px;
+    /* width: 60%; */
     padding: 1.5rem;
     margin-top: 1.5rem;
 }
 .home_text h1 {
-    font-size: 55px;
+    font-size: clamp(32px, 5vw, 55px);
     font-weight: 700;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 1.5rem;
@@ -33,7 +37,7 @@
 }
 
 .home_text h3 {
-    font-size: 25px;
+    font-size: clamp(19px, 2.5vw, 25px);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.671);
@@ -43,6 +47,7 @@
 .home_text .hmtext_btn{
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
@@ -51,7 +56,7 @@
     background: #3589E7;
     background: linear-gradient(153deg, rgba(53, 137, 231, 1) 5%, rgba(20, 181, 139, 1) 83%);
     color: white;
-    font-size: 20px;
+    font-size: clamp(15px, 2vw, 20px);
     padding: 10px 16px;
     border-radius: 10px;
     outline: none;
@@ -61,10 +66,11 @@
    
 }
 .hmtext_btn h4 a {
-    font-size: 21px;
+    font-size: clamp(15px, 2vw, 20px);
     background-color: rgba(255, 255, 255, 0.801);
     color: black;
     padding: 10px 16px;
+    border: 0.8px solid black;
     border-radius: 10px;
     cursor: pointer;
     font-family:  Arial, Helvetica, sans-serif;  
@@ -91,333 +97,72 @@
 }
 
 .home_img{
-    width: 40%;
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* width: 40%; */
     padding: 1rem;
     margin-bottom: 2rem;
+    position: relative;
+
 }
 .home_img img {
     width: 100%;
-    max-width: 430px;
-    height: 26rem;
+    max-width: 380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    /* height: 26rem; */
     border-radius: 50%;
     box-shadow: 0px 0px 40px 20px rgba(0, 0, 255, 0.322);
 }
 
 .hmimg_icon {
-    padding: 10px;
+    padding: 8px;
     background-color: rgba(0, 0, 255, 0.596);
-    font-size: 50px;
+    font-size: clamp(40px, 5vw, 50px);
     cursor: pointer;
     border-radius: 500px;
+    position: absolute;
+    top: 0rem;
+    right: 4rem;
+    /* margin-left: 5rem; */
 }
 
 
-@media (max-width : 900px) {
-    
+
+@media (max-width: 768px) {
     .home_main {
-        width: 100%;
-        padding: 8rem 2.5rem 2rem 2.5rem;
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    .home_text {
-        width: 60%;
-        padding: 1rem;
-        margin-top: 1rem;
-    }
-
-    .home_text h1 {
-        font-size: 50px;
-        margin-bottom: 1.3rem;
-    }
-    
-
-    .home_text h3 {
-        font-size: 23px;
-        margin-bottom: 1.6rem;
-    }
-
-    .home_text .hmtext_btn{
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-    .hmtext_btn button {
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-    .hmtext_btn h4 {
-        font-size: 18px;
-        padding: 10px 15px;
-    }
-
-    .home_text .hmtext_icons {
-        gap: 1.3rem;
-    }
-    .hmtext_icons p {
-        padding: 8px 8px 1px 8px;
-        font-size: 23px;
-    }
-
-    .home_img{
-        width: 40%;
-        padding: 1rem;
-        margin-bottom: 2rem;
-    }
-    .home_img img {
-        width: 100%;
-        height: 25rem;
-    }
-
-    .hmimg_icon {
-        padding: 10px;
-        font-size: 45px;
-    }
-    
-}
-
-
-@media (max-width : 768px) {
- 
-    .home_main {
-        width: 100%;
-        padding: 7.5rem 2.5rem 2rem 2.5rem;
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    .home_text {
-        width: 60%;
-        padding: 1rem;
-        margin-top: 1rem;
-    }
-
-    .home_text h1 {
-        font-size: 45px;
-        margin-bottom: 1.2rem;
-    }
-    
-
-    .home_text h3 {
-        font-size: 22px;
-        margin-bottom: 1.6rem;
-    }
-
-    .home_text .hmtext_btn{
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-    .hmtext_btn button {
-        font-size: 16px;
-        padding: 9px 14px;
-    }
-    .hmtext_btn h4 {
-        font-size: 18px;
-        padding: 9px 14px;
-        border-radius: 10px;
-    }
-
-    .home_text .hmtext_icons {
-        gap: 1.3rem;
-    }
-    .hmtext_icons p {
-        padding: 8px 8px 1px 8px;
-        font-size: 21px;
-    }
-
-    .home_img{
-        width: 40%;
-        padding: 1rem;
-        margin-bottom: 2rem;
-    }
-    .home_img img {
-        width: 100%;
-        height: 20rem;
-        background-size: cover;
-        overflow: hidden;
-        border-radius: 50%;
-        box-shadow: 0px 0px 40px 20px rgba(0, 0, 255, 0.322);
-    }
-
-    .hmimg_icon {
-        padding: 10px;
-        font-size: 40px;
-    }
-    
-}
-
-
-@media (max-width : 620px) {
-
-    .home_text h1 {
-        font-size: 42px;
-        margin-bottom: 1.2rem;
-    }
-    
-}
-
-
-@media (max-width : 600px) {
- 
-    .home_main {
-        width: 100%;
-        padding: 7.5rem 2.5rem 2rem 2.5rem;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 10px;
+        text-align: center;
     }
 
     .home_text {
         width: 100%;
-        padding: 1rem;
-        margin-top: 1rem;
     }
 
-    .home_text h1 {
-        font-size: 41px;
-        margin-bottom: 1.2rem;
-    }
-    
-
-    .home_text h3 {
-        font-size: 21px;
-        margin-bottom: 1.6rem;
-    }
-
-    .home_text .hmtext_btn{
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-    .hmtext_btn button {
-        font-size: 15px;
-        padding: 8px 12px;
-    }
-    .hmtext_btn h4 {
-        font-size: 17px;
-        padding: 8px 12px;
-    }
-
-    .home_text .hmtext_icons {
-        gap: 1.3rem;
-    }
-    .hmtext_icons p {
-        padding: 8px 8px 1px 8px;
-        font-size: 21px;
-    }
-
-    .home_img{
+    .home_img {
         width: 100%;
-        padding: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-left: 2.5rem;
+        margin-top: 1.5rem;
     }
+
     .home_img img {
-        width: 70%;
-        height: 20rem;
-        background-size: cover;
-        overflow: hidden;
-        border-radius: 50%;
-        box-shadow: 0px 0px 35px 20px rgba(0, 0, 255, 0.322);
-
+        max-width: 280px;
     }
 
-    .hmimg_icon {
-        padding: 10px;
-        font-size: 40px;
-    }
-    
-}
-
-
-@media (max-width : 600px) {
- 
-    .home_main {
-        width: 100%;
-        padding: 7.5rem 2.5rem 2rem 2.5rem;
-        display: flex;
-        flex-direction: column;
+    .hmtext_btn {
         justify-content: center;
-        gap: 10px;
     }
 
-    .home_text {
-        width: 100%;
-        padding: 1rem;
-        margin-top: 1rem;
-    }
-
-    .home_text h1 {
-        font-size: 41px;
-        margin-bottom: 1.2rem;
-    }
-    
-
-    .home_text h3 {
-        font-size: 21px;
-        margin-bottom: 1.6rem;
-    }
-
-    .home_text .hmtext_btn{
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-    .hmtext_btn button {
-        font-size: 15px;
-        padding: 8px 12px;
-    }
-    .hmtext_btn h4 {
-        font-size: 17px;
-        padding: 8px 12px;
-    }
-
-    .home_text .hmtext_icons {
-        gap: 1.3rem;
-    }
-    .hmtext_icons p {
-        padding: 8px 8px 1px 8px;
-        font-size: 21px;
-    }
-
-    .home_img{
-        width: 100%;
-        padding: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-left: 2.5rem;
-    }
-    .home_img img {
-        width: 75%;
-        height: 19rem;
-        background-size: cover;
-        overflow: hidden;
-        border-radius: 50%;
-        box-shadow: 0px 0px 35px 20px rgba(0, 0, 255, 0.322);
-
+    .hmtext_icons {
+        justify-content: center;
     }
 
     .hmimg_icon {
-        padding: 10px;
-        font-size: 40px;
+        top: 0;
+        right: 12rem;
+        left: 5rem;
     }
     
-}
-
-
-@media (max-width : 400px) {
-    .home_text .hmtext_btn{
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-    .hmtext_btn button {
-        font-size: 13px;
-        padding: 8px 12px;
-    }
-    .hmtext_btn h4 {
-        font-size: 15px;
-        padding: 8px 12px;
-    }
 }

@@ -6,6 +6,7 @@ import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import { ToastContainer } from 'react-toastify';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -13,11 +14,13 @@ function App() {
   return (
     <>
       <div>
-          <Navbar />
+          <Navbar /> 
             <Home />
             <Skills />
             <Projects />
             <About />
+
+            <ToastContainer position='top-center' autoClose={3000} />
             <Contact />
              <Footer />
        </div>

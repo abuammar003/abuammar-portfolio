@@ -23,19 +23,20 @@
     padding: 1rem;
 }
 .about_left h1 {
-    font-size: clamp(28px, 4vw, 45px);
+    /* font-size: clamp(28px, 4vw, 45px); */
+    font-size: clamp(26px, 4vw, 40px);
     color: rgba(53, 137, 231, 1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .about_left p {
-    font-size: clamp(15px, 2vw, 18px);
+    font-size: clamp(15px, 2vw, 17px);
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 0.8rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.637);
     width: 97%;
@@ -51,6 +52,9 @@
 
 .about_left .abtlft_Box {
     padding: 15px;
+}
+.abtlft_Box {
+    margin-bottom: 1rem;
 }
 .abtlft_Box h3 {
     font-size: clamp(18px, 3vw, 23px);
@@ -70,6 +74,9 @@
     gap: 2rem;
     text-align: center;
     flex-wrap: wrap;
+    margin-top: 2rem;
+    /* border: 1px solid black; */
+
 }
 .abtlftBox_educ .eduBox_icon {
     font-size: clamp(22px, 3vw, 28px );
@@ -92,7 +99,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .about_right .abt_Box {
@@ -114,7 +121,7 @@
 }
 
 .abt_Box .icon {
-    font-size: clamp(20px, 5vw, 25px);
+    font-size: clamp(19px, 3vw, 23px);
     color: white;
     font-weight: 600;
     background-color: rgba(53, 137, 231, 1);
@@ -123,7 +130,7 @@
     line-height: 1.2;
 }
 .abt_Box h2{
-    font-size: clamp(17px, 3vw, 21px);
+    font-size: clamp(17px, 3vw, 20px);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 3px;
     color: rgba(53, 137, 231, 1);
