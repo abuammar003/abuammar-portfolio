@@ -25,7 +25,7 @@ const Projects = () => {
             description : "A React-based Tic Tac Toe game featuring User vs User and User vs Computer modes, real-time score tracking, and a clean responsive UI built with custom CSS.",
             tech: ["React.js", 'Reasponsive CSS', 'Game Logic'],
             gitHub: "https://github.com/abuammar003/reactTicTacToeApp",
-            live: "https://tic-tac-toe-app-zeta-six.vercel.app/"
+            live: "https://tic-tac-toe-game-abuammar.vercel.app/"
         },
          {
             id: 3,
@@ -33,8 +33,8 @@ const Projects = () => {
             title: "Movies Information Website",
             description : "A responsive movie information website that allows users to search, explore, and view detailed data about movies including ratings, genres, and release dates using real-time API integration.",
             tech: ["React.js", 'REST API', "Responsive CSS"],
-            gitHub: "#",
-            live: "#"
+            gitHub: "https://github.com/abuammar003/MovieRadar",
+            live: "https://movieradar-info.vercel.app/"
         },
          {
             id: 4,
@@ -42,7 +42,7 @@ const Projects = () => {
             title: "E-Commerce Platform",
             description : "Full-stack e-commerce solution implementing user authentication, product management, and payment integration using modern web technologies",
             tech: ["Ract.js", 'TailwindCSS', 'REST API'],
-            gitHub: "#",
+            gitHub: "https://github.com/abuammar003/music-player",
             live: "#"
         },
 

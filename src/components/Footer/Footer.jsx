@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Footer.css";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -15,8 +15,9 @@ const Footer = () => {
         </div>
         <div className="ftr_icons">
             <a href='https://github.com/abuammar003'><FaGithub className='icon'/></a>
-            <a href='https://www.linkedin.com/in/ammar-shah-252448284/'><FaLinkedinIn className='icon'/></a>
+            <a href='https://www.linkedin.com/in/abu-ammar-252448284/'><FaLinkedinIn className='icon'/></a>
             <a href='https://x.com/Ammarshah1252'><FaTwitter className='icon'/></a>
+            <a href='https://www.instagram.com/abuammar_03/' className='icon'><FaInstagram /></a>
         </div>
         <p>Tech Stacks I'm Proficient in:</p>
         <div className="ftr_stack">

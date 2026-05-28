@@ -106,7 +106,7 @@
   display: flex;
   background: #e0e7ff;
   color: #1e3a8a;
-  font-size: clamp(14px, 2vw, 17px);
+  font-size: clamp(14px, 1.6vw, 18px);
   font-weight: 500;
   padding: 0.35rem 0.8rem;
   border-radius: 20px;
@@ -131,7 +131,7 @@
 .prjct_link p {
   cursor: pointer;
   font-weight: 600;
-  font-size: clamp(15px, 2vw, 18px);
+  font-size: clamp(14px, 1.6vw, 18px);
   color: #2563eb;
   border: 1px solid #2563eb;
   padding: 0.4rem 1rem;

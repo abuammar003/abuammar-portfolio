@@ -42,11 +42,12 @@
 }
 .ftr_icons a .icon {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.822);
+    /* color: rgba(255, 255, 255, 0.822); */
 }
 .ftr_icons .icon {
     font-size: clamp(18px, 3vw, 24px);
     cursor: pointer;
+    color: rgba(255, 255, 255, 0.822);
 }
 .icon:hover {
     color: rgba(53, 137, 231, 1);
