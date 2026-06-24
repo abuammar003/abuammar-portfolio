@@ -87,7 +87,7 @@ const Contact = () => {
                         <span className='icon'> <IoCall className='code_icon'/> </span>
                         <div className="box_text">
                             <h3>Phone</h3>
-                            <p>Available for call/SMS</p>
+                            <p>+91 8180951252</p>
                         </div>
                     </div>
 
@@ -117,7 +117,7 @@ const Contact = () => {
                         <a href="https://github.com/abuammar003">
                             <button> <FaGithub className='icon' /> Github </button>
                         </a>
-                        <a href="https://www.linkedin.com/in/ammar-shah-252448284/">
+                        <a href="https://www.linkedin.com/in/abu-ammar-252448284/">
                             <button> <FaLinkedinIn className='icon' /> LinkedIn</button>
                         </a>
                     </div>
@@ -125,7 +125,7 @@ const Contact = () => {
                         <a href='https://x.com/Ammarshah1252'>
                         <button> <FaTwitter className='icon' /> Twitter</button>
                         </a>
-                        <a href='https://www.instagram.com/ammarshah_03/'>
+                        <a href='https://www.instagram.com/abuammar_03/'>
                         <button> <FaInstagram className='icon' /> Instagram</button>
                         </a>
                     </div>

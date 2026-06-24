@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
         <div className="ftr_bottom">
-          <p>© {new Date().getFullYear()} Ammar Shah. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Abu Ammar. All rights reserved.</p>
           <p>Built with ❤️ using React.js</p>
         </div>
 

@@ -18,7 +18,7 @@ const Home = () => {
             <div className="hmtext_icons">
                 <p><a href='https://github.com/abuammar003'><FaGithub /></a></p>
                 <p><a href='https://www.linkedin.com/in/abu-ammar-252448284/'><FaLinkedinIn /></a></p>
-                <p><a href='https://x.com/Ammarshah1252'><FaTwitter /></a></p>
+                {/* <p><a href='https://x.com/Ammarshah1252'><FaTwitter /></a></p> */}
                 <p><a href='https://www.instagram.com/abuammar_03/'><FaInstagram /></a></p>
             </div>
         </div>

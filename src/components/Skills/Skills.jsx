@@ -94,7 +94,7 @@ const Skills = () => {
             </div>
              <div className="skil_range">
                 <h2>Node.js 
-                    <span>{inView && <CountUp end={75} duration={2} />}%</span>
+                    <span>{inView && <CountUp end={60} duration={2} />}%</span>
                 </h2>
                 <div className="range_white">
                     <div className="range_blueNJs"></div>
@@ -102,7 +102,7 @@ const Skills = () => {
             </div>
              <div className="skil_range">
                 <h2>Express.js 
-                    <span>{inView && <CountUp end={80} duration={2} />}%</span>
+                    <span>{inView && <CountUp end={65} duration={2} />}%</span>
                 </h2>
                 <div className="range_white">
                     <div className="range_blueEJs"></div>
@@ -110,7 +110,7 @@ const Skills = () => {
             </div>
              <div className="skil_range">
                 <h2>DataBase 
-                    <span>{inView && <CountUp end={78} duration={2} />}%</span>
+                    <span>{inView && <CountUp end={50} duration={2} />}%</span>
                 </h2>
                 <div className="range_white">
                     <div className="range_blueDB"></div>
