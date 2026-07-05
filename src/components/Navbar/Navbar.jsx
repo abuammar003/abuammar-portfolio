@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./Navbar.css";
 import { Link } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
-import { RxCross2 } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx"; 
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
@@ -19,11 +19,17 @@ const Navbar = () => {
 
         <div className={`nav_links ${showNav ? "show" : ""}`} onClick={() => {setShowNav(false)}}> 
             <ul>
-                <li><a href="#home"> Home </a></li>
-                <li><a href="#skill"> Skills </a></li>
-                <li><a href="#projects"> Projects </a></li>
-                <li><a href="#about"> About </a></li>
-                <li><a href="#contact"> Contact </a></li>
+                <li><a href="#home" className='link'> Home </a></li>
+                <li><a href="#skill" className='link'> Skills </a></li>
+                <li><a href="#projects" className='link'> Projects </a></li>
+                <li><a href="#about" className='link'> About </a></li>
+                <li><a href="#contact" className='link'> Contact </a></li>
+
+                {/* <li><Link to="home" className='link'> Home </Link></li>
+                <li><Link to="skill" className='link'> Skills </Link></li>
+                <li><Link to="projects" className='link'> Projects </Link></li>
+                <li><Link to="about" className='link'> About </Link></li>
+                <li><Link to="contact" className='link'> Contact </Link></li> */}
             </ul>
           </div>
 
