@@ -38,7 +38,8 @@
     line-height: 1.6;
     margin-bottom: 0.8rem;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.637);
+    /* color: rgba(0, 0, 0, 0.637); */
+    color:  #475569;
     width: 97%;
 }
 .about_left .blueSpan {

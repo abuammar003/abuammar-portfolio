@@ -41,7 +41,7 @@ const About = () => {
     <div className='about_main' id='about'>
         <div className="about_left">
 
-            <h1>About Me</h1>
+            <h1>About Me</h1> 
 
             <p>I am <b>Abu Ammar Akber Shah</b>, a <span className='blueSpan'> B.Sc. Computer Science graduate </span> and <span className='blueSpan'> passionate Full-Stack Web Developer </span>  with expertise in  <span className='greenSpan'> React.js, JavaScript, Node.js, Express.js, and MongoDB</span>. I enjoy building responsive, user-friendly, and scalable web applications that deliver seamless digital experiences. </p>
 
@@ -50,7 +50,6 @@ const About = () => {
 
             <div className="abtlft_Box">
                 <h3>My Development Phollisophy</h3>
-                {/* <p>I believe great software is built with clean code, thoughtful design, and a focus on user experience. Every project is an opportunity to create scalable and maintainable solutions while continuously learning and improving. I strive to write efficient code, embrace best practices, and build applications that are both functional and visually appealing.</p> */}
                 <p>I believe great software combines clean code, thoughtful design, and excellent user experience. I focus on building scalable, maintainable applications while continuously learning and following modern development best practices.</p>
 
                 <div className="abtlftBox_educ">
