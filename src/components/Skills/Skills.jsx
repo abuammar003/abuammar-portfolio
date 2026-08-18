@@ -2,15 +2,101 @@ import React from 'react';
 import "./Skills.css";
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-import { FaCode, FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaNodeJs, FaGlobe, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaNodeJs, FaGlobe, FaGithub, FaServer, FaDatabase, FaTools, FaMagic } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiTailwindcss, SiExpress, SiSpringsecurity, SiMysql, SiMongodb, SiNetlify, SiPostman } from "react-icons/si";
-import { AiFillDatabase } from "react-icons/ai";
+import { SiTailwindcss, SiExpress, SiSpringsecurity, SiMongodb, SiNetlify, SiPostman } from "react-icons/si";
+import { TbBrandMysql } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
+import { MdWeb } from "react-icons/md";
 
-const Skills = () => {
+
+
+const Skills = () => { 
     const {ref, inView} = useInView({triggerOnce : true, threshold : 0.5});
+
+const SKILL_CATEGORIES = [
+  {
+    title: "Frontend",
+    categoryIcon: MdWeb,
+    skills: [
+      { name: "HTML5", icon: FaHtml5, iconClass: "red_icon" },
+      { name: "CSS3", icon: FaCss3Alt, iconClass: "blue_icon" },
+      { name: "JavaScript", icon: RiJavascriptFill },
+      { name: "React.js", icon: FaReact, iconClass: "blue_icon" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, iconClass: "blue_icon" },
+      { name: "Bootstrap", icon: FaBootstrap, iconClass: "blue_icon" },
+    ],
+  },
+
+  {
+    title: "Backend",
+    categoryIcon: FaServer,
+    skills: [
+      { name: "Node.js", icon: FaNodeJs, iconClass: "gren_icon" },
+      { name: "Express.js", icon: SiExpress, iconClass: "black_icon" },
+      { name: "REST APIs", icon: FaGlobe },
+      { name: "Authentication", icon: SiSpringsecurity, iconClass: "blue_icon" },
+    ],
+  },
+
+  {
+    title: "Databases",
+    categoryIcon: FaDatabase,
+    skills: [
+      { name: "MongoDB", icon: SiMongodb, iconClass: "gren_icon" },
+      { name: "MySQL", icon: TbBrandMysql, iconClass: "black_icon" },
+      { name: "ORM" },
+    ],
+  },
+
+  {
+    title: "Tools & Platforms",
+    categoryIcon: FaTools,
+    skills: [
+      { name: "VSCode", icon: VscVscode, iconClass: "blue_icon" },
+      { name: "GitHub", icon: FaGithub, iconClass: "black_icon" },
+      { name: "Vercel", icon: IoLogoVercel, iconClass: "black_icon" },
+      { name: "Netlify", icon: SiNetlify, iconClass: "blue_icon" },
+      { name: "Postman", icon: SiPostman, iconClass: "red_icon" },
+      { name: "AI-Assisted Development", icon: FaMagic, iconClass: "black_icon" },
+    ],
+  },
+];
+
+
+const SKILL_PROFICIENCY = [
+  {
+    name: "HTML/CSS",
+    level: "Advanced",
+    rangeClass: "range_blueHTML",
+  },
+  {
+    name: "JavaScript",
+    level: "Intermediate/Advanced",
+    rangeClass: "range_blueJS",
+  },
+  {
+    name: "React.js",
+    level: "Advanced",
+    rangeClass: "range_blueRJs",
+  },
+  {
+    name: "Node.js",
+    level: "Beginner",
+    rangeClass: "range_blueNJs",
+  },
+  {
+    name: "Express.js",
+    level: "Beginner",
+    rangeClass: "range_blueEJs",
+  },
+  {
+    name: "Database",
+    level: "Beginner",
+    rangeClass: "range_blueDB",
+  },
+];
  
   return (
     <div className='skil_main' id='skill'>
@@ -20,105 +106,58 @@ const Skills = () => {
             <p>Comprehensive knowledge in modern web technologies and development tools, as a fresh Computer Science graduate</p>
         </div>
 
-        <div className='skil_contnr'>
-            <div className="skil_box">
-                <h3><span className='sklbox_head'><FaCode /></span></h3>
-                <h4>Front-End</h4>
+
+        <div className="skil_contnr">
+          {SKILL_CATEGORIES.map((category, index) => {
+            const CategoryIcon = category.categoryIcon;
+        
+            return (
+              <div className="skil_box" key={index}>
+            
+                <h3><span className="sklbox_head"><CategoryIcon /></span></h3>
+                <h4>{category.title}</h4>
+            
                 <ul>
-                    <li><span className='red_icon'><FaHtml5 /></span>HTML5</li>
-                    <li><span className='blue_icon'><FaCss3Alt /></span>CSS3</li>
-                    <li><span><RiJavascriptFill /></span>JavaScript</li>
-                    <li><span className='blue_icon'><FaReact /></span>React.js</li>
-                    <li><span className='blue_icon'><SiTailwindcss /></span>Tailwind CSS </li>
-                    <li><span className='blue_icon'><FaBootstrap /></span>BootStrap</li>
+                  {category.skills.map((skill, skillIndex) => {
+                    const SkillIcon = skill.icon;
+                
+                    return (
+                      <li key={skillIndex}>
+                        {SkillIcon && (
+                          <span className={skill.iconClass || ""}>
+                            <SkillIcon />
+                          </span>
+                        )}
+
+                        {skill.name}
+                      </li>
+                    );
+                  })}
                 </ul>
-            </div>
-            <div className="skil_box">
-                <h3><span className='sklbox_head'><FaCode /></span></h3>
-                <h4>Back-End</h4>
-                <ul>
-                    <li><span className='gren_icon'><FaNodeJs /></span>Node.js</li>
-                    <li><span className='black_icon'><SiExpress /></span>Express.js</li>
-                    <li><span><FaGlobe /></span>Restful APIs</li>
-                    <li><span className='blue_icon'>< SiSpringsecurity /></span>Authentication</li>
-                </ul>
-            </div>
-            <div className="skil_box">
-                <h3><span className='sklbox_head'><FaCode /></span></h3>
-                <h4>DataBases</h4>
-                <ul>
-                    {/* <li><span className='blue_icon'><SiMysql /></span>MySQL</li> */}
-                    <li><span className='gren_icon'><SiMongodb /></span>MongoDB</li>
-                    <li><span className='black_icon'><AiFillDatabase /></span>Database Design</li>
-                    <li>ORM</li>
-                </ul>
-            </div>
-            <div className="skil_box">
-                    <h3><span className='sklbox_head'><FaCode /></span></h3>
-                    <h4>Tools</h4>
-                <ul>
-                    <li><span className='blue_icon'><VscVscode /></span>VSCode</li>
-                    <li><span className='black_icon'><FaGithub /></span>GitHub</li>
-                    <li><span className='black_icon'><IoLogoVercel /></span>Vercel</li>
-                    <li><span className='blue_icon'><SiNetlify /></span>Netlify</li>
-                    <li><span className='red_icon'><SiPostman /></span>Postman</li>
-                </ul>
-            </div>
+              
+              </div>
+            );
+          })}
         </div>
 
-            <h1>Skill Proficiency</h1>
+
+          <h1>Skill Proficiency</h1>
         <div className="skilrng_main" ref={ref}>
-            <div className="skil_range">
-                <h2>HTML/CSS <span>{inView && <CountUp end={90} duration={2} />} %
-                 {/* 95%  */}
-                </span></h2>
-                <div className="range_white">
-                    <div className="range_blueHTML"></div>
-                </div>
-            </div>
-             <div className="skil_range">
-                <h2>JavaScript 
-                    <span>{inView && <CountUp end={80} duration={2} />}%</span>
-                    </h2>
-                <div className="range_white">
-                    <div className="range_blueJS"></div>
-                </div>
-            </div>
-             <div className="skil_range">
-                <h2>React.js 
-                    <span>{inView && <CountUp end={85} duration={2} />}%</span>
-                    </h2>
-                <div className="range_white">
-                    <div className="range_blueRJs"></div>
-                </div>
-            </div>
-             <div className="skil_range">
-                <h2>Node.js 
-                    <span>{inView && <CountUp end={60} duration={2} />}%</span>
-                </h2>
-                <div className="range_white">
-                    <div className="range_blueNJs"></div>
-                </div>
-            </div>
-             <div className="skil_range">
-                <h2>Express.js 
-                    <span>{inView && <CountUp end={65} duration={2} />}%</span>
-                </h2>
-                <div className="range_white">
-                    <div className="range_blueEJs"></div>
-                </div>
-            </div>
-             <div className="skil_range">
-                <h2>DataBase 
-                    <span>{inView && <CountUp end={50} duration={2} />}%</span>
-                </h2>
-                <div className="range_white">
-                    <div className="range_blueDB"></div>
-                </div>
-            </div>
-        </div>
+           {SKILL_PROFICIENCY.map((skill, index) => (
+             <div className="skil_range" key={index}>
+               <h2> {skill.name} 
+                <span className="skill_range_span"> {skill.level}</span>
+               </h2>
 
+               <div className="range_white">
+                 <div className={skill.rangeClass}></div>
+               </div>
+             </div>
+           ))}
+          </div>
+    
     </div>
+
 )
 }
 
