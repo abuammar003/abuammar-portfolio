@@ -10,16 +10,16 @@ const Home = () => {
  
         <div className='home_text'>
             <h1>Hello, I'm <br /> <span className="grad-text"> Abu Ammar </span> </h1>
-            <h3>Computer Science Graduate crafting digital solutions with modern technologies, eager to start my professional journey in web development</h3>
+            <h3>B.Sc. Computer Science graduate focused on building responsive, user-friendly web applications with modern frontend technologies.</h3>
             <div className="hmtext_btn">
                 <button><a href='../../assets/Abu_Ammar_Akber_Shah_Resume.pdf' download='Abu_Ammar_Akber_Shah_Resume.pdf'> Download CV </a></button>
                 <h4> <a href='#contact'>Get in Touch</a></h4>
             </div>
             <div className="hmtext_icons">
-                <p><a href='https://github.com/abuammar003'><FaGithub /></a></p>
-                <p><a href='https://www.linkedin.com/in/abu-ammar-252448284/'><FaLinkedinIn /></a></p>
-                {/* <p><a href='https://x.com/Ammarshah1252'><FaTwitter /></a></p> */}
-                <p><a href='https://www.instagram.com/abuammar_03/'><FaInstagram /></a></p>
+                <a href='https://github.com/abuammar003'><FaGithub /></a>
+                <a href='https://www.linkedin.com/in/abu-ammar-252448284/'><FaLinkedinIn /></a>
+                {/*<a href='https://x.com/Ammarshah1252'><FaTwitter /></a> */}
+                <a href='https://www.instagram.com/abuammar_03/'><FaInstagram /></a>
             </div>
         </div>
         <div className='home_img'>

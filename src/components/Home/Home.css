@@ -62,13 +62,17 @@
     outline: none;
     border: 0;
     cursor: pointer;
-    font-family:  Arial, Helvetica, sans-serif;        
+    font-family:  Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease-in-out;
 }
 .hmtext_btn button a {
     text-decoration: none;
     color: white;
 }
 
+.hmtext_btn h4{
+    transition: all 0.2s ease-in-out;
+}
 .hmtext_btn h4 a {
     font-size: clamp(15px, 2vw, 20px);
     background-color: rgba(255, 255, 255, 0.801);
@@ -82,13 +86,20 @@
     text-decoration: none;
 }
 
+.hmtext_btn button:hover,
+ h4:hover {
+    transform: translateY(-3px);
+    /* margin-left: 3px; */
+ }
+
+
 .home_text .hmtext_icons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 1.5rem;
 }
-.hmtext_icons p a {
+.hmtext_icons a {
     background-color: rgba(255, 255, 255, 0.897);
     color: black;
     border: 500px;
@@ -98,6 +109,12 @@
     cursor: pointer;    
     font-size: 25px;
     align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+.hmtext_icons a:hover {
+    background: black;
+    color: white;
+    transform: translateY(-2px);
 }
 
 .home_img{
