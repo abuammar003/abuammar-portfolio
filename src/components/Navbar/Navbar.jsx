@@ -24,12 +24,12 @@ const Navbar = () => {
                 <li><a href="#projects" className='link'> Projects </a></li>
                 <li><a href="#about" className='link'> About </a></li>
                 <li><a href="#contact" className='link'> Contact </a></li>
-
-                {/* <li><Link to="home" className='link'> Home </Link></li>
-                <li><Link to="skill" className='link'> Skills </Link></li>
-                <li><Link to="projects" className='link'> Projects </Link></li>
-                <li><Link to="about" className='link'> About </Link></li>
-                <li><Link to="contact" className='link'> Contact </Link></li> */}
+{/* 
+                <li><Link to="/" className='link'> Home </Link></li>
+                <li><Link to="/Skills" className='link'> Skills </Link></li>
+                <li><Link to="/Projects" className='link'> Projects </Link></li>
+                <li><Link to="/About" className='link'> About </Link></li>
+                <li><Link to="/Contact" className='link'> Contact </Link></li> */}
             </ul>
           </div>
 

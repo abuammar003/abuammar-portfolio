@@ -26,6 +26,7 @@
     /* background-color: rgba(255, 255, 255, 0.281); */
     background-color: rgba(255, 255, 255, 0.829);
     border-radius: 20px;
+    z-index: 1000;
 }
 
 .nav_main h1 {
