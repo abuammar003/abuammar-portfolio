@@ -31,8 +31,8 @@ const Projects = () => {
             id: 3, 
             image: bazaar, 
             title: "Bazaar - E-Commerce Platform",
-            description : "React-based e-commerce application with a responsive Tailwind CSS UI and dynamic product rendering via REST API integration. Focused on performance, scalability, and clean component architecture.",
-            tech: ["React.js", 'TailwindCSS', 'REST API', 'Responsive Design'],
+            description : "A full-stack e-commerce platform built with React.js, Tailwind CSS, Node.js, Express.js, and MongoDB. Features dynamic product browsing, search and filtering, product details, cart management, responsive UI, and REST API integration with a MongoDB-backed product database. Built with reusable components and a clean frontend-backend architecture.",
+            tech: ["React.js", 'TailwindCSS', 'Node.js', 'Express.js', 'MongoDB', 'REST API', 'Responsive Design'],
             gitHub: "https://github.com/abuammar003/e-commerce.app",
             live: "https://bazaar-store.netlify.app/"
         },
