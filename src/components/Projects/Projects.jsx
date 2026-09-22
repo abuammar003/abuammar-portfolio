@@ -10,33 +10,31 @@ import amura_ai from "../../assets/Amura.ai-ui-image.png";
 
 const Projects = () => {
     const projects = [
-         {
-            id: 2,
-            image: amura_ai,
-            title: "Amura.ai - AI-Powered Chat Application",
-            description : "Amura.ai is a modern AI chat application designed to deliver intelligent and real-time conversations. Built with React.js, Tailwind CSS, and the Groq API, it features a responsive UI, chat history management, and smooth message interactions for an intuitive user experience.",
-            tech: ["Ract.js", 'GROQ API', 'Responsive Design', "State Management"],
-            gitHub: "https://github.com/abuammar003/amura.ai",
-            live: "https://amura-ai.netlify.app/"
-        },{
-            id: 1,
-            image: movieradar,
-            title: "Movies Information Website",
-            description : "A responsive movie information website that allows users to search, explore, and view detailed data about movies including ratings, genres, and release dates using real-time API integration.",
-            tech: ["React.js", 'REST API', "Responsive CSS"],
-            gitHub: "https://github.com/abuammar003/MovieRadar",
-            live: "https://movieradar-info.vercel.app/"
-        },
         {
-            id: 3, 
+            id: 1, 
             image: bazaar, 
             title: "Bazaar - E-Commerce Platform",
             description : "A full-stack e-commerce platform built with React.js, Tailwind CSS, Node.js, Express.js, and MongoDB. Features dynamic product browsing, search and filtering, product details, cart management, responsive UI, and REST API integration with a MongoDB-backed product database. Built with reusable components and a clean frontend-backend architecture.",
             tech: ["React.js", 'TailwindCSS', 'Node.js', 'Express.js', 'MongoDB', 'REST API', 'Responsive Design'],
             gitHub: "https://github.com/abuammar003/e-commerce.app",
             live: "https://bazaar-store.netlify.app/"
-        },
-         {
+        }, {
+            id: 2,
+            image: amura_ai,
+            title: "Amura.ai – AI Chat Application",
+            description : "A modern AI-powered chat application built with React.js and the Groq API, designed for smooth and real-time conversations. Features include chat history, unique conversation management, message interactions, and persistent chat data using local storage.",
+            tech: ["React.js", 'Groq API', "State Management", 'Responsive Design', 'Local Storage'],
+            gitHub: "https://github.com/abuammar003/amura.ai",
+            live: "https://amura-ai.netlify.app/"
+        },{
+            id: 3,
+            image: movieradar,
+            title: "MovieRadar – Movie Information Platform",
+            description : "A responsive movie discovery platform built with React.js that allows users to search, explore, and view detailed movie information through real-time API integration. Features include trending movies, search, movie details, saved movies, and persistent user preferences using Context API and local storage.",
+            tech: ["React.js", 'JavaScript', 'REST API', 'Local Storage', 'Context API', "Responsive CSS"],
+            gitHub: "https://github.com/abuammar003/MovieRadar",
+            live: "https://movieradar-info.vercel.app/"
+        }, {
             id: 4,
             image: ticTacToe,
             title: "Tic-Tac-Toe Game",
